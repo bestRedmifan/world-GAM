@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Tahoma, sans-serif;
+    background:
+        radial-gradient(circle at top, #27324a 0%, #11151f 45%, #080a0f 100%);
+    color: #ffffff;
+    text-align: center;
+}
+
+section {
+    width: min(92%, 650px);
+    margin: 35px auto;
+    padding: 30px 22px;
+    background: rgba(27, 32, 45, 0.96);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+}
+
+h1 {
+    font-size: 36px;
+    margin-top: 5px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+p {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+button {
+    margin: 7px;
+    padding: 13px 23px;
+    border: 0;
+    border-radius: 14px;
+    background: #343d52;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    background: #46526b;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+input {
+    width: min(90%, 370px);
+    margin: 10px;
+    padding: 14px;
+    border: 2px solid #39445a;
+    border-radius: 14px;
+    outline: none;
+    background: #0d1119;
+    color: white;
+    font-size: 17px;
+    text-align: center;
+}
+
+input:focus {
+    border-color: #7185ad;
+}
+
+#offlineScreen {
+    display: block;
+}
+
+#languageScreen,
+#mainMenu,
+#idScreen,
+#vipCodeScreen,
+#inviteCodeScreen,
+#gameScreen,
+#lockScreen {
+    display: none;
+}
+
+#questionArea {
+    margin: 22px auto;
+    padding: 28px 15px;
+    border-radius: 18px;
+    background: #252d3d;
+    font-size: 30px;
+    font-weight: bold;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#coins,
+#level {
+    font-weight: bold;
+}
+
+#timer,
+#lockTimer {
+    font-family: monospace;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#lockTimer {
+    font-size: 42px;
+}
+
+@media (max-width: 500px) {
+    section {
+        margin: 20px auto;
+        padding: 24px 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    button {
+        width: 85%;
+    }
+}
