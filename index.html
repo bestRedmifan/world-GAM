@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Barmaan Vebs - Mind Game</title>
+
+    <!-- اتصال به CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- صفحه بررسی اینترنت -->
+    <section id="offlineScreen">
+        <h1>📡</h1>
+        <h2>آنتن آن خسته است!</h2>
+        <p>برای اجرای بازی به اینترنت نیاز است.</p>
+
+        <button id="retryButton">
+            تلاش مجدد
+        </button>
+    </section>
+
+
+    <!-- انتخاب زبان -->
+    <section id="languageScreen">
+
+        <h1>🌍</h1>
+
+        <h2 id="languageTitle">
+            زبان خود را انتخاب کنید
+        </h2>
+
+        <button id="persianButton">
+            فارسی
+        </button>
+
+        <button id="arabicButton">
+            العربية
+        </button>
+
+        <button id="englishButton">
+            English
+        </button>
+
+    </section>
+
+
+    <!-- منوی اصلی -->
+    <section id="mainMenu">
+
+        <h1>🧠 Barmaan Vebs</h1>
+
+        <button id="beginnerButton">
+            تازه کار
+        </button>
+
+        <button id="vipButton">
+            مدل VIP
+        </button>
+
+        <button id="inviteButton">
+            کد دعوت
+        </button>
+
+        <br>
+
+        <button id="loginButton">
+            ورود
+        </button>
+
+        <button id="createIdButton">
+            ساخت ID
+        </button>
+
+    </section>
+
+
+    <!-- ساخت ID -->
+    <section id="idScreen">
+
+        <h2 id="idTitle">
+            انتخاب ID بازی
+        </h2>
+
+        <p id="idInformation">
+            ID باید حداقل ۹ و حداکثر ۱۲ رقم داشته باشد.
+        </p>
+
+        <input
+            type="text"
+            id="playerID"
+            minlength="9"
+            maxlength="12"
+            inputmode="numeric"
+            placeholder="ID بازی"
+        >
+
+        <p id="randomName">
+            نام پیشنهادی:
+        </p>
+
+        <button id="generateIdButton">
+            ساخت ID
+        </button>
+
+        <button id="enterIdButton">
+            ورود
+        </button>
+
+        <button id="idHelpButton">
+            راهنما
+        </button>
+
+        <button id="backFromIdButton">
+            بازگشت
+        </button>
+
+    </section>
+
+
+    <!-- کد VIP -->
+    <section id="vipCodeScreen">
+
+        <h2 id="vipCodeTitle">
+            کد VIP
+        </h2>
+
+        <p id="vipCodeInformation">
+            کد VIP را وارد کنید تا به جای معنی کلمه،
+            سوال ریاضی دریافت کنید.
+        </p>
+
+        <input
+            type="password"
+            id="vipCodeInput"
+            maxlength="4"
+            inputmode="numeric"
+            placeholder="کد VIP"
+        >
+
+        <button id="vipCodeSubmit">
+            تأیید
+        </button>
+
+        <button id="backFromVipCode">
+            بازگشت
+        </button>
+
+    </section>
+
+
+    <!-- کد دعوت -->
+    <section id="inviteCodeScreen">
+
+        <h2 id="inviteCodeTitle">
+            کد دعوت
+        </h2>
+
+        <p id="inviteCodeInformation">
+            کد دعوت را وارد کنید تا 1,000,000 سکه دریافت کنید.
+        </p>
+
+        <input
+            type="password"
+            id="inviteCodeInput"
+            maxlength="6"
+            inputmode="numeric"
+            placeholder="کد دعوت"
+        >
+
+        <button id="inviteCodeSubmit">
+            دریافت سکه
+        </button>
+
+        <button id="backFromInvite">
+            بازگشت
+        </button>
+
+    </section>
+
+
+    <!-- بازی -->
+    <section id="gameScreen">
+
+        <h2 id="gameTitle">
+            🧠 بازی
+        </h2>
+
+        <p>
+            مرحله:
+            <span id="level">1</span>
+        </p>
+
+        <p>
+            🪙
+            <span id="coins">0</span>
+        </p>
+
+        <p>
+            ⏱️
+            <span id="timer">00:00</span>
+        </p>
+
+        <div id="questionArea">
+            سوال اینجا نمایش داده می‌شود.
+        </div>
+
+        <input
+            type="text"
+            id="answer"
+            placeholder="پاسخ خود را وارد کنید"
+        >
+
+        <br>
+
+        <button id="submitAnswer">
+            تأیید پاسخ
+        </button>
+
+        <button id="hintButton">
+            راهنما (-45 🪙)
+        </button>
+
+        <button id="skipButton">
+            رد کردن مرحله (-2,000 🪙)
+        </button>
+
+        <button id="gameBackButton">
+            بازگشت
+        </button>
+
+    </section>
+
+
+    <!-- صفحه قفل -->
+    <section id="lockScreen">
+
+        <h2 id="lockTitle">
+            🔒 بازی موقتاً قفل است
+        </h2>
+
+        <p id="lockInformation">
+            لطفاً تا پایان زمان مشخص‌شده صبر کنید.
+        </p>
+
+        <h1 id="lockTimer">
+            01:00:00
+        </h1>
+
+        <button id="cheatCodeButton">
+            وارد کردن کد تقلب
+        </button>
+
+    </section>
+
+
+    <!-- اتصال به JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
